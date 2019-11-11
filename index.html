@@ -1,92 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Form Demo</title>
-  <style>
-    
-    body {
-      font-family: 'Merriweather', sans-serif;
-      font-size: 100%;
-      margin: 2rem 10%;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form Demo</title>
+    <style>
+        body {
+            font-family: 'Merriweather', sans-serif;
+            font-size: 100%;
+            margin: 2rem 10%;
+        }
 
-    form {
-      display: grid;
-      justify-items: center;
-    }
+        form {
+            display: grid;
+            justify-items: center;
+        }
 
-    .outer {
-      background-color: whitesmoke;
-      border-radius: .25rem;
-      border: 1px solid lightgrey;
-      width: 50%;
-    }
+        .outer {
+            background-color: whitesmoke;
+            border-radius: .25rem;
+            border: 1px solid lightgrey;
+            width: 50%;
+        }
 
-    .inner {
-      border: 1px solid lightgrey;
-    }
+        .inner {
+            border: 1px solid lightgrey;
+        }
 
-    legend {
-      font-size: 1rem;
-      font-weight: 600;
-      color: rgb(12, 173, 106);
-      border: 1px solid lightgrey;
-      border-radius: .25rem;
-      padding: .5rem .5rem;
-      background-color: white;
-      margin-bottom: 10px;
-    }
+        legend {
+            font-size: 1rem;
+            font-weight: 600;
+            color: rgb(12, 173, 106);
+            border: 1px solid lightgrey;
+            border-radius: .25rem;
+            padding: .5rem .5rem;
+            background-color: white;
+            margin-bottom: 10px;
+        }
 
-    .input-box {
-      border: 1.50px solid gray;
-      width: 90%;
-      height: 2rem;
-      margin-top: 12px;
-    }
+        .input-box {
+            border: 1.50px solid gray;
+            width: 90%;
+            height: 2rem;
+            margin-top: 12px;
+        }
 
-    textarea {
-      border: 1.50px solid gray;
-      width: 90%;
-      margin-top: 12px;
-    }
+        textarea {
+            border: 1.50px solid gray;
+            width: 90%;
+            margin-top: 12px;
+        }
 
-    label {
-      font-size: 1.25rem;
-      font-weight: 600;
-    }
+        label {
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
 
-    button {
-      font-family: 'Lato', sans-serif;
-      font-size: 1.75rem;
-      color: white;
-      background-color: rgb(12, 173, 106);
-      
-      border: rgb(12, 173, 106);
-      padding: .75rem .75rem;
-    }
-
-  
-  </style>
+        button {
+            font-family: 'Lato', sans-serif;
+            font-size: 1.75rem;
+            color: white;
+            background-color: rgb(12, 173, 106);
+            border: rgb(12, 173, 106);
+            padding: .75rem .75rem;
+        }
+    </style>
 </head>
+
 <body>
-    <fieldset>
-        <legend>Please feel free to send a message</legend>
-        <ul>
-            <li><label>Email: <input type="email" name="email" /></label></li>
-            <li><label>Message: <textarea name="message"></textarea></label></li>
-        </ul>
-    </fieldset>
-  <form name="contact" method="POST" data-netlify="true">
-  <p>Would you like reply?</p>
-<ol>
- <li><input type="radio" name="response" value="yes" checked> Yes</li>
- <li><input type="radio" name="reponse" value="no"> No</li>
-</ol>
-    <button type="submit">Send</button>
-  </p>
-</form>
+    <form name="contact" method="POST" data-netlify="true">
+        <fieldset>
+            <legend>Please feel free to send a message</legend>
+            <ul>
+                <li><label>Email: <br></br><input type="email" name="email" /></label></li>
+                <br></br>
+                <li><label>Message:<br></br> <textarea name="message"></textarea></label></li>
+            </ul>
+            <fieldset>
+                    <legend>Would you like reply?</legend>
+                <ol>
+                    <li><input type="radio" name="response" value="yes"> Yes</li>
+                    <li><input type="radio" name="response" value="no"> No</li>
+                </ol>
+            </fieldset>
+            <button type="submit">Send</button>
+            </p>
+        </fieldset>
+    </form>
 </body>
+
 </html>
